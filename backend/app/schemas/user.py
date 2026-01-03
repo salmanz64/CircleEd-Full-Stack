@@ -11,8 +11,13 @@ class UserBase(BaseModel):
     skills_to_teach: List[str] = []
     skills_to_learn: List[str] = []
 
-class UserCreate(UserBase):
-    password: str
+class UserCreate(BaseModel):
+    email: EmailStr
+    full_name: str
+    password: str = Field(..., min_length=8)
+    bio: Optional[str] = None
+    skills_to_teach: List[str] = Field(default_factory=list)
+    skills_to_learn: List[str] = Field(default_factory=list)
 
 class UserUpdate(BaseModel):
     model_config = ConfigDict(populate_by_name=True)
@@ -37,9 +42,10 @@ class User(BaseModel):
     skills_to_teach: List[str] = []
     skills_to_learn: List[str] = []
 
+
 class UserLogin(BaseModel):
     email: EmailStr
-    password: str
+    password: str = Field(..., min_length=8)
 
 
 
