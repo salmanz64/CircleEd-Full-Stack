@@ -229,7 +229,7 @@ export default function BookingsPage() {
       
       // Send notification
       if (skill) {
-        sendSessionAcceptedNotification(skill.title, skill.teacher_name, bookingId)
+        sendSessionAcceptedNotification(skill.title, skill.teacher?.full_name || 'Unknown', bookingId)
       }
       
       showToast({ title: 'Booking confirmed', type: 'success' })
