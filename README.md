@@ -1,6 +1,11 @@
 # 🌙 CircleEd — Peer-to-Peer Learning Platform
 
-A modern dark-themed full-stack peer-to-peer learning platform for exchanging skills using tokens.
+CircleEd is a modern, dark-themed, full-stack peer-to-peer learning platform that enables users to exchange skills through a token-based economy. The platform is designed to make learning collaborative, accessible, and engaging by allowing users to teach what they know, learn what they need, and earn tokens in the process.
+
+Users can browse a marketplace of skills, book one-on-one learning sessions, chat in real-time, manage their token wallet, and build a public learning profile with reviews and ratings. The system focuses on trust, usability, and scalability, making it suitable for both casual learners and serious professionals.
+
+Built with a performance-focused frontend and a robust backend API, CircleEd follows clean architecture principles, supports future extensibility (AI recommendations, payments, analytics), and is optimized for responsive, cross-device usage.
+
 
 ---
 
