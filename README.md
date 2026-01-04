@@ -4,6 +4,12 @@ A modern dark-themed full-stack peer-to-peer learning platform for exchanging sk
 
 ---
 
+## 🌐 Live Demo
+
+- **Frontend:** https://circle-ed-full-stack.vercel.app  
+- **Backend API:** https://circleed-backend.onrender.com  
+- **API Docs:** https://circleed-backend.onrender.com/docs
+
 ## 🖤 Screenshots
 
 | Home | Market | Dashboard |
