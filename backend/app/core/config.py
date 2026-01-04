@@ -1,8 +1,12 @@
 from typing import List
 import os
 from dotenv import load_dotenv
+import logging
 
 load_dotenv()
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 class Settings:
     DATABASE_URL: str = os.getenv("DATABASE_URL")
@@ -25,5 +29,12 @@ class Settings:
     ENVIRONMENT: str = os.getenv("ENVIRONMENT", "production")
 
     USE_MOCK_DB: bool = os.getenv("USE_MOCK_DB", "false").lower() == "true"
+
+    def __init__(self):
+        logger.info(f"✅ CORS Origins configured: {self.CORS_ORIGINS if self.CORS_ORIGINS else 'ALLOWING ALL (*)'}")
+        if not self.CORS_ORIGINS:
+            logger.warning("⚠️  No CORS_ORIGINS set - allowing all origins for development")
+        else:
+            logger.info(f"🔒 Restricted to origins: {self.CORS_ORIGINS}")
 
 settings = Settings()
