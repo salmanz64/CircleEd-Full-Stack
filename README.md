@@ -6,9 +6,9 @@ A modern dark-themed full-stack peer-to-peer learning platform for exchanging sk
 
 ## 🖤 Screenshots
 
-| Home | Skills | Dashboard |
+| Home | Market | Dashboard |
 |------|--------|-----------|
-| ![Home](screenshots/home.png) | ![Skills](screenshots/skills.png) | ![Dashboard](screenshots/dashboard.png) |
+| ![Home](screenshots/home.png) | ![Market](screenshots/market.png) | ![Dashboard](screenshots/dashboard.png) |
 
 | Chat | Wallet | Profile |
 |------|--------|----------|
