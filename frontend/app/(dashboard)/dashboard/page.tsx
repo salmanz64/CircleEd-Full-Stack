@@ -133,7 +133,7 @@ export default function DashboardPage() {
             <div className="relative py-8 px-6 rounded-lg flex items-center justify-between">
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">Welcome back, {userName.split(" ")[0]}! 👋</h1>
-                <p className="text-gray-600 text-lg">Here's your learning journey at a glance</p>
+                <p className="text-gray-600 text-lg">Here&apos;s your learning journey at a glance</p>
               </div>
               <button
                 onClick={handleRefresh}
@@ -342,7 +342,7 @@ export default function DashboardPage() {
         </div>
         <div className="relative z-10">
           <p className="text-sm font-semibold mb-1 opacity-90">Keep up the momentum!</p>
-          <p className="text-lg font-bold">You're on a {streak}-day streak! Keep learning to unlock more rewards.</p>
+          <p className="text-lg font-bold">You&apos;re on a {streak}-day streak! Keep learning to unlock more rewards.</p>
           <Button 
             asChild 
             className="mt-4 bg-white text-indigo-600 hover:bg-gray-100 font-semibold"

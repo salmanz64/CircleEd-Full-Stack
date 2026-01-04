@@ -9,10 +9,12 @@ import { Label } from "@/components/ui/label"
 import { PrimaryButton } from "@/components/PrimaryButton"
 import { SecondaryButton } from "@/components/SecondaryButton"
 import { Github, Mail } from "lucide-react"
+import { useAuthRedirect } from "@/lib/useAuthRedirect"
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api/v1"
 
 export default function LoginPage() {
+  useAuthRedirect()
   const router = useRouter()
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
@@ -120,7 +122,7 @@ export default function LoginPage() {
         </CardContent>
         <CardFooter className="flex justify-center">
           <p className="text-sm text-muted-foreground">
-            Don't have an account?{" "}
+            Don&apos;t have an account?{" "}
             <Link href="/register" className="text-primary hover:underline font-medium">
               Sign up
             </Link>

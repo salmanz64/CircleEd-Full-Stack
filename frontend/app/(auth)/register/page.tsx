@@ -9,10 +9,12 @@ import { Label } from "@/components/ui/label"
 import { PrimaryButton } from "@/components/PrimaryButton"
 import { SecondaryButton } from "@/components/SecondaryButton"
 import { Github, Mail } from "lucide-react"
+import { useAuthRedirect } from "@/lib/useAuthRedirect"
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api/v1"
 
 export default function RegisterPage() {
+  useAuthRedirect()
   const router = useRouter()
   const [fullName, setFullName] = useState("")
   const [email, setEmail] = useState("")

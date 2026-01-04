@@ -9,7 +9,7 @@ export default function NotFound() {
         <CardContent className="pt-6">
           <h2 className="text-2xl font-bold mb-2">Skill Not Found</h2>
           <p className="text-gray-600 mb-6">
-            The skill you're looking for doesn't exist or has been removed.
+            The skill you&apos;re looking for doesn&apos;t exist or has been removed.
           </p>
           <Button asChild>
             <Link href="/marketplace">Back to Marketplace</Link>

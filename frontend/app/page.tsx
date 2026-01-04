@@ -1,22 +1,26 @@
+"use client"
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { PrimaryButton } from "@/components/PrimaryButton"
 import { Card, CardContent } from "@/components/ui/card"
-import { 
-  GraduationCap, 
-  Users, 
-  Coins, 
-  MessageSquare, 
-  TrendingUp, 
-  Clock, 
+import {
+  GraduationCap,
+  Users,
+  Coins,
+  MessageSquare,
+  TrendingUp,
+  Clock,
   Award,
   ArrowRight,
   CheckCircle,
   Star,
   Sparkles
 } from "lucide-react"
+import { useAuthRedirect } from "@/lib/useAuthRedirect"
 
 export default function HomePage() {
+  useAuthRedirect()
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50">
       {/* Hero Section */}
@@ -227,7 +231,7 @@ export default function HomePage() {
                     <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <p className="text-gray-700 mb-4 italic">"{testimonial.content}"</p>
+                <p className="text-gray-700 mb-4 italic">&ldquo;{testimonial.content}&rdquo;</p>
                 <div>
                   <p className="font-semibold text-gray-900">{testimonial.name}</p>
                   <p className="text-sm text-gray-500">{testimonial.role}</p>

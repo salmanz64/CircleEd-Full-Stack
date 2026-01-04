@@ -145,11 +145,11 @@ export function Navbar() {
             </>
           ) : (
             <>
-              <Button variant="ghost" asChild>
-                <Link href="/login">Login</Link>
+              <Button variant="ghost" onClick={() => router.push("/login")}>
+                Login
               </Button>
-              <Button variant="primary" asChild>
-                <Link href="/register">Sign Up</Link>
+              <Button variant="primary" onClick={() => router.push("/register")}>
+                Sign Up
               </Button>
             </>
           )}

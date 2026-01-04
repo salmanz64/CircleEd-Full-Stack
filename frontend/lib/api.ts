@@ -86,7 +86,7 @@ async function apiCall<T>(
       const token = localStorage.getItem("access_token")
       if (token) authHeader["Authorization"] = `Bearer ${token}`
     }
-  } catch (e) {
+  } catch {
     // ignore localStorage access errors
   }
 
